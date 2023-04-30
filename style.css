@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+:root {
+    font-size: 20px;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: rgb(218, 218, 92);
+    text-align: center;
+    
+}
+
+body {
+    background-color: rgb(218, 218, 92);
+    
+}
+
+header {
+    width: 100vw;
+    min-height: 200px;
+    background: black;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+}
+

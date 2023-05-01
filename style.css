@@ -14,8 +14,11 @@ html {
 
 h1 {
     color: rgb(218, 218, 92);
-    text-align: center;
-    
+    text-align: center;    
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 body {
@@ -50,4 +53,61 @@ li {
     font-size: 1.5rem;
     color: white;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction {
+    margin-top: 50px;
+}
+
+.introduction-content {
+    width: 80%;
+    margin: 50px;
+
+}
+
+#for-section {
+    background-color: black;
+}
+
+#for {
+    color: white;
+    margin-top: 50px;
+}
+
+.for-content {
+    color: white;
+    width: 80%;
+    margin: 50px;
+}
+
+#while {
+    margin-top: 50px;
+}
+
+.while-content {
+    width: 80%;
+    margin: 50px;
+}
+
+#do-while-section {
+    background-color: black;
+}
+
+#do-while {
+    color: white;
+    margin-top: 50px;
+}
+
+.do-while-content {
+    color: white;
+    width: 80%;
+    margin: 50px;
+}
+
 

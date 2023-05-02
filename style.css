@@ -64,6 +64,11 @@ section {
     align-items: center;
 }
 
+footer {
+    background-color: rgb(38, 39, 41);
+    display: block;
+}
+
 .header-content {
     display: flex;
     justify-content: center;
@@ -120,4 +125,13 @@ section {
     margin: 50px;
 }
 
+.footer-content {
+    background-color: rgb(38, 39, 41);
+    color: white;
+    width: 80%;
+    min-height: 80px;
+    margin: 50px 50px 0 0;
+    padding: 2rem;
+    text-align: center;
+}
 

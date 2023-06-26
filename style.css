@@ -8,89 +8,50 @@
     font-size: 20px;
 }
 
-html {
+body {
+    background-color: rgb(218, 218, 92);
     font-family: 'Poppins', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
+/* universal-classes starts */
 
-h1 {
-    color: rgb(218, 218, 92);    
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-body {
-    background-color: rgb(218, 218, 92);
-    
-}
-
-header {
-    width: 100vw;
-    min-height: 200px;
-    background: black;
-}
-
-nav {
-    width: 100vw;
-    height: 50px;
-    background-color: black;
-}
-
-ul {
-    list-style-type: none;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-section {
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer {
-    background-color: rgb(38, 39, 41);
-    display: block;
+.title {
+    font-size: 2rem;
 }
+
+/* universal-classes ends */
 
 .header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 0 auto;
+    text-align: center;
     padding: 50px;
+    color: rgb(218, 218, 92);
+    width: 100vw;
+    min-height: 200px;
+    background-color: black;
 }
 
-#introduction {
+.introduction {
     margin-top: 50px;
 }
 
 .introduction-content {
     width: 80%;
     margin: 50px;
-
 }
 
-#for-section {
+.for-section {
     background-color: black;
 }
 
-#for {
+.for {
     color: white;
     margin-top: 50px;
 }
@@ -101,28 +62,9 @@ footer {
     margin: 50px;
 }
 
-#while {
-    margin-top: 50px;
-}
-
-.while-content {
-    width: 80%;
-    margin: 50px;
-}
-
-#do-while-section {
-    background-color: black;
-}
-
-#do-while {
-    color: white;
-    margin-top: 50px;
-}
-
-.do-while-content {
-    color: white;
-    width: 80%;
-    margin: 50px;
+.footer-section {
+    background-color: rgb(38, 39, 41);
+    display: block;
 }
 
 .footer-content {

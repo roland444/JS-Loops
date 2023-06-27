@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box; 
 }
 
 :root {
@@ -17,63 +17,119 @@ body {
 
 .flex {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .title {
     font-size: 2rem;
+    padding: 25px;
+    text-align: center;
+}
+
+.background-black {
+    background-color: black;
+    color: white;
 }
 
 /* universal-classes ends */
 
-.header-content {
-    margin: 0 auto 0 auto;
-    text-align: center;
-    padding: 50px;
-    color: rgb(218, 218, 92);
-    width: 100vw;
-    min-height: 200px;
+/* header section starts */
+
+.header {
     background-color: black;
+    width: 100%;
+    min-height: 200px;
 }
 
+.header-content {
+    color: rgb(218, 218, 92);
+    text-align: center;
+    padding: 80px;
+}
+
+/* header section ends */
+
+/* introduction section starts*/
+
 .introduction {
-    margin-top: 50px;
+    padding: 2.5rem;
 }
 
 .introduction-content {
-    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-div {
+    border: 1px solid black;
     margin: 50px;
 }
 
-.for-section {
-    background-color: black;
+.nav-content {
+    list-style-type: none;
+    padding: 50px;
 }
 
+.nav-content li {
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+
+.nav-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.introduction-text {
+    width: 750px;
+    padding: 50px;
+    font-size: 1.1rem;
+}
+
+/* introduction section ends*/
+
+/* for section starts */
+
 .for {
-    color: white;
-    margin-top: 50px;
+    padding: 2.5rem;
 }
 
 .for-content {
-    color: white;
-    width: 80%;
-    margin: 50px;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    padding: 25px;
 }
 
-.footer-section {
+.for-text {
+    padding: 25px;
+}
+
+.for-code {
+    min-width: 400px;
+    height: 300px;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+/* for section ends */
+
+
+/*
+
+.footer {
     background-color: rgb(38, 39, 41);
     display: block;
 }
 
 .footer-content {
     background-color: rgb(38, 39, 41);
-    color: white;
-    width: 80%;
     min-height: 80px;
-    margin: 50px 50px 0 0;
     padding: 2rem;
     text-align: center;
 }
 
+*/

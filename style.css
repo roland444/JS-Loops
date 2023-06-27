@@ -32,6 +32,16 @@ body {
     color: white;
 }
 
+.code {
+    min-width: 400px;
+    height: 300px;
+    margin: 2rem;
+    background-color: rgb(67, 67, 67);
+    border: 5px solid gray;
+    border-radius: 20px;
+    color: black;
+}
+
 /* universal-classes ends */
 
 /* header section starts */
@@ -106,16 +116,25 @@ body {
     padding: 25px;
 }
 
-.for-code {
-    min-width: 400px;
-    height: 300px;
-    margin: 2rem;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
+.for-of-text {
+    margin: 9rem auto;
+}
+
+.for-in-text {
+    margin: 9rem auto;
 }
 
 /* for section ends */
+
+/* while section starts */
+
+.while {
+    padding: 2.5rem;
+}
+
+/* while section ends */
+
+
 
 
 /*

@@ -13,6 +13,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ================================== */
 
 /* universal-classes starts */
@@ -72,6 +76,10 @@ body {
     padding: 2.5rem;
 }
 
+.introduction h2 a {
+    color: black;
+}
+
 .introduction-content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,17 +92,23 @@ body {
 
 .nav-content {
     list-style-type: none;
-    padding: 50px;
+    padding: 25px;
 }
 
 .nav-content li {
-    padding: .5rem;
+    padding: .4rem;
     font-size: 1.4rem;
 }
 
 .nav-content li a {
-    text-decoration: none;
+    display: block;
+    height: 50px;
     color: black;
+}
+
+.nav-content li a:hover {
+    background-color: black;
+    color: white;
 }
 
 .introduction-text {
@@ -121,6 +135,10 @@ body {
 
 .for {
     padding: 2.5rem;
+}
+
+.for h2 a {
+    color: white;
 }
 
 .for-content {
@@ -154,6 +172,10 @@ body {
     padding: 2.5rem;
 }
 
+.while h2 a {
+    color: black;
+}
+
 .while-content {
     flex-direction: column;
     width: 75vw;
@@ -180,6 +202,10 @@ body {
 .break-continue {
     padding: 3rem;
     flex-wrap: wrap;
+}
+
+.break-continue h2 a {
+    color: white;
 }
 
 .break {
@@ -215,6 +241,10 @@ body {
     margin: 2.5rem auto;
 }
 
+.forEach h2 a {
+    color: black;
+}
+
 .forEach-content {
     flex-direction: column;
     width: 75vw;
@@ -234,6 +264,10 @@ body {
 
 .map {
     padding: 2.5rem;
+}
+
+.map h2 a {
+    color: white;
 }
 
 .map-content {

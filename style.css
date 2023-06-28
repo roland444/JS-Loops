@@ -13,6 +13,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ================================== */
+
 /* universal-classes starts */
 
 .flex {
@@ -44,6 +46,8 @@ body {
 
 /* universal-classes ends */
 
+/* ================================== */
+
 /* header section starts */
 
 .header {
@@ -59,6 +63,8 @@ body {
 }
 
 /* header section ends */
+
+/* ================================== */
 
 /* introduction section starts*/
 
@@ -97,7 +103,19 @@ body {
     font-size: 1.1rem;
 }
 
+.information {
+    background: linear-gradient(to right bottom, rgba(112, 168, 85), rgba(67, 142, 69));
+    color: white;
+    padding: 25px;
+    border: 5px solid rgb(119, 202, 134);
+    width: 50vw;
+    margin: 3rem auto 3rem auto;
+    border-radius: 30px;
+}
+
 /* introduction section ends*/
+
+/* ================================== */
 
 /* for section starts */
 
@@ -126,13 +144,49 @@ body {
 
 /* for section ends */
 
+/* ================================== */
+
 /* while section starts */
 
 .while {
     padding: 2.5rem;
 }
 
+.while-content {
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    padding: 25px;
+}
+
+.while-text {
+    padding: 25px;
+}
+
+.do-while-text {
+    margin: 9rem auto;
+}
+
+
+
 /* while section ends */
+
+/* ================================== */
+
+/* break/continue classes starts */
+
+.break-continue {
+    display: inline-block;
+}
+
+/* break/continue classes ends */
+
+
+
+
+
+
+
 
 
 

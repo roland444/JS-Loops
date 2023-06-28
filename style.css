@@ -136,10 +136,12 @@ body {
 
 .for-of-text {
     margin: 9rem auto;
+    padding: 25px;
 }
 
 .for-in-text {
     margin: 9rem auto;
+    padding: 25px;
 }
 
 /* for section ends */
@@ -176,12 +178,41 @@ body {
 /* break/continue classes starts */
 
 .break-continue {
-    display: inline-block;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.break {
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+}
+
+.break-text {
+    padding: 25px;
+}
+
+.continue {
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+}
+
+.continue-text {
+    padding: 25px;
 }
 
 /* break/continue classes ends */
 
+/* ================================== */
 
+/* forEach section starts */
+
+
+
+/* forEach section ends */
 
 
 

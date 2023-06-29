@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 :root {
@@ -46,6 +46,16 @@ a {
     border: 5px solid gray;
     border-radius: 20px;
     color: black;
+}
+
+.underline-black:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.underline-white:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* universal-classes ends */
@@ -283,10 +293,9 @@ a {
 
 /* map section ends */
 
+/* ================================== */
 
-
-
-
+/* footer sections starts */
 
 /*
 
@@ -303,3 +312,15 @@ a {
 }
 
 */
+
+/* footer sections ends */
+
+/* ================================== */
+
+/* key frames starts */
+
+
+
+/* key frames ends */
+
+

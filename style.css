@@ -48,14 +48,36 @@ a {
     color: black;
 }
 
-.underline-black:hover {
-    color: black;
-    text-decoration: underline;
+.underline-black::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
 }
 
-.underline-white:hover {
-    color: white;
-    text-decoration: underline;
+.underline-white::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.underline-black:hover::after, .underline-white:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
 }
 
 /* universal-classes ends */
@@ -87,6 +109,8 @@ a {
 }
 
 .introduction h2 a {
+    display: inline-block;
+    position: relative;
     color: black;
 }
 
@@ -102,18 +126,23 @@ a {
 
 .nav-content {
     list-style-type: none;
-    padding: 25px;
+    
 }
 
 .nav-content li {
-    padding: .4rem;
     font-size: 1.4rem;
 }
 
 .nav-content li a {
     display: block;
-    height: 50px;
-    color: black;
+    height: 60px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: black; 
+    transition: 0.5s;
+    
 }
 
 .nav-content li a:hover {
@@ -148,6 +177,8 @@ a {
 }
 
 .for h2 a {
+    display: inline-block;
+    position: relative;
     color: white;
 }
 
@@ -183,6 +214,8 @@ a {
 }
 
 .while h2 a {
+    display: inline-block;
+    position: relative;
     color: black;
 }
 
@@ -215,6 +248,8 @@ a {
 }
 
 .break-continue h2 a {
+    display: inline-block;
+    position: relative;
     color: white;
 }
 
@@ -252,6 +287,8 @@ a {
 }
 
 .forEach h2 a {
+    display: inline-block;
+    position: relative;
     color: black;
 }
 
@@ -277,6 +314,8 @@ a {
 }
 
 .map h2 a {
+    display: inline-block;
+    position: relative;
     color: white;
 }
 

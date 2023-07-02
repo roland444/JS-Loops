@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+code {
+    color: silver;
+}
+
 /* ================================== */
 
 /* universal-classes starts */
@@ -43,8 +47,6 @@ a {
 }
 
 .code {
-    min-width: 400px;
-    height: 300px;
     margin: 2rem;
     background-color: rgb(67, 67, 67);
     border: 5px solid gray;
@@ -197,6 +199,10 @@ a {
     padding: 25px;
 }
 
+.for-code {
+    text-align: left;
+}
+
 .for-of-text {
     margin: 9rem auto;
     padding: 25px;
@@ -236,6 +242,7 @@ a {
 
 .do-while-text {
     margin: 9rem auto;
+    padding: 25px;
 }
 
 

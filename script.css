@@ -1,5 +1,9 @@
+code {
+    color: rgb(211, 210, 210);
+}
+
 .purple {
-    color: rgb(205, 121, 205);
+    color: rgb(223, 131, 223);
 }
 
 .bracket {
@@ -15,7 +19,7 @@
 }
 
 .punctuation {
-    color: rgb(33, 186, 186);
+    color: rgb(100, 228, 228);
 }
 
 .variable {
@@ -24,7 +28,7 @@
 }
 
 .operation {
-    color: rgb(145, 145, 239);
+    color: rgb(126, 126, 235);
 }
 
 .comment {

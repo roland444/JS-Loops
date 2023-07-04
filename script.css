@@ -6,6 +6,10 @@ code {
     color: rgb(223, 131, 223);
 }
 
+.blue {
+    color: rgb(33, 170, 220);
+}
+
 .bracket {
     color: yellow;
 }
@@ -14,8 +18,16 @@ code {
     color: rgb(235, 64, 235);
 }
 
+.key {
+    color: rgb(111, 222, 185);
+}
+
 .number {
     color: orange;
+}
+
+.string {
+    color: rgb(128, 218, 128);
 }
 
 .punctuation {

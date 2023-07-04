@@ -76,11 +76,7 @@
                     <div class="code-result-content">
                         <code>
                             <p style="padding: 5px;">Result:</p>
-                            <div class="result-nl">0</div>
-                            <div class="result-nl">1</div>
-                            <div class="result-nl">2</div>
-                            <div class="result-nl">3</div>
-                            <div class="result-nl">4</div>
+                            <!-- <div class="">0</div> -->
                         </code>
                     </div>
                 </div>
@@ -95,9 +91,19 @@
                 <div class="for-of-code code">
                     <pre>
                         <code>
+    <span class="variable">let</span> <span class="purple">array</span> <span class="punctuation">=</span> <span class="bracket">[</span><span class="punctuation">'</span><span class="string">a</span><span class="punctuation">'</span><span class="punctuation">,</span> <span class="punctuation">'</span><span class="string">b</span><span class="punctuation">'</span><span class="punctuation">,</span> <span class="punctuation">'</span><span class="string">c</span><span class="punctuation">'</span><span class="punctuation">,</span> <span class="punctuation">'</span><span class="string">d</span><span class="punctuation">'</span><span class="punctuation">,</span> <span class="punctuation">'</span><span class="string">e</span><span class="punctuation">'</span><span class="bracket">]</span><span class="punctuation">;</span>  
 
+    <span class="purple">for</span> <span class="bracket">(</span><span class="variable">let</span> <span class="purple">element</span> <span class="punctuation">of</span> <span>array</span><span class="bracket">)</span> <span class="bracket">{</span>
+        console<span class="punctuation">.</span><span class="operation">log</span><span class="inner-brckt">(</span><span>element</span><span class="inner-brckt">)</span><span class="punctuation">;</span>
+    <span class="bracket">}</span>
                         </code>
                     </pre>
+                    <div class="code-result-content">
+                        <code>
+                            <p style="padding: 5px;">Result:</p>
+                            <!-- <div class="result-nl">0</div> -->
+                        </code>
+                    </div>
                 </div>
                 <div class="for-in-text" id="for-in">
                     <h2 class="title">
@@ -110,9 +116,19 @@
                 <div class="for-in-code code">
                     <pre>
                         <code>
-
+    <span class="variable">let</span> <span class="purple">object</span> <span class="punctuation">=</span> <span class="bracket">{</span> <span class="key">a</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span> <span class="key">b</span><span class="punctuation">:</span> <span class="number">2</span><span class="punctuation">,</span> <span class="key">c</span><span class="punctuation">:</span> <span class="number">3</span><span class="bracket">}</span><span class="punctuation">;</span>
+               
+    <span class="purple">for</span> <span class="bracket">(</span><span class="variable">let</span> <span class="purple">property</span> <span class="punctuation">in</span> <span>object</span><span class="bracket">)</span> <span class="bracket">{</span>
+        console<span class="punctuation">.</span><span class="operation">log</span><span class="inner-brckt">(</span>property <span class="punctuation">+</span> <span class="punctuation">"</span><span class="string">:</span><span class="punctuation">"</span> <span class="punctuation">+</span>  object<span class="blue">[</span><span class="punctuation">property</span><span class="blue">]</span><span class="inner-brckt">)</span><span class="punctuation">;</span>    
+    }
                         </code>
                     </pre>
+                    <div class="code-result-content">
+                        <code>
+                            <p style="padding: 5px;">Result:</p>
+                            <!-- <div class="">0</div> -->
+                        </code>
+                    </div>
                 </div>
             </div>
         </section>
@@ -226,5 +242,6 @@
     <footer class="footer">
         
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -149,7 +149,6 @@ code {
 
 .nav-content {
     list-style-type: none;
-    
 }
 
 .nav-content li {
@@ -214,10 +213,6 @@ code {
 
 .for-text {
     padding: 25px;
-}
-
-.for-code {
-    text-align: left;
 }
 
 .for-of-text {

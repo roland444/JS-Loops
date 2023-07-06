@@ -24,13 +24,20 @@
 //     x++;
 // }
 
-let y = 0;
+// let y = 0;
 
-do {
-    console.log(y);
-    y++
+// do {
+//     console.log(y);
+//     y++
+// }
+// while (y < 5);
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
 }
-while (y < 5);
 
 
 

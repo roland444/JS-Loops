@@ -11,8 +11,26 @@
 // }
 
 
-let object = { a: 1, b: 2, c: 3};
+// let object = { a: 1, b: 2, c: 3};
 
-for (let property in object) {
-    console.log(property + ":" +  object[property]);
+// for (let property in object) {
+//     console.log(property + ":" +  object[property]);
+// }
+
+// let x = 0;
+
+// while (x < 5) {
+//     console.log(x);
+//     x++;
+// }
+
+let y = 0;
+
+do {
+    console.log(y);
+    y++
 }
+while (y < 5);
+
+
+

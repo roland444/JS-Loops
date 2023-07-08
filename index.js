@@ -32,12 +32,18 @@
 // }
 // while (y < 5);
 
-for (let i = 0; i < 5; i++) {
-    if (i === 3) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 0; i < 5; i++) {
+//     if (i === 3) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+let array = ["a", "b", "c", "d", "e"];
+
+array.forEach((element) => {
+    console.log(element)
+})
 
 
 

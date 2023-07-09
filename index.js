@@ -39,11 +39,14 @@
 //     console.log(i);
 // }
 
+// let array = ["a", "b", "c", "d", "e"];
+
+// array.forEach((element) => {
+//     console.log(element)
+// })
+
 let array = ["a", "b", "c", "d", "e"];
 
-array.forEach((element) => {
-    console.log(element)
-})
-
-
-
+let newArray = array.map((element) => {
+    console.log(element);
+});

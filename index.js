@@ -45,8 +45,8 @@
 //     console.log(element)
 // })
 
-let array = ["a", "b", "c", "d", "e"];
+// let array = ["a", "b", "c", "d", "e"];
 
-let newArray = array.map((element) => {
-    console.log(element);
-});
+// let newArray = array.map((element) => {
+//     console.log(element);
+// });

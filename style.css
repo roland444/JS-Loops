@@ -358,8 +358,6 @@ code {
 
 /* footer sections starts */
 
-/*
-
 .footer {
     background-color: rgb(38, 39, 41);
     display: block;
@@ -367,12 +365,10 @@ code {
 
 .footer-content {
     background-color: rgb(38, 39, 41);
-    min-height: 80px;
+    min-height: 150px;
     padding: 2rem;
     text-align: center;
 }
-
-*/
 
 /* footer sections ends */
 

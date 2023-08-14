@@ -58,6 +58,24 @@ p {
     color: black;
 }
 
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+} 
+
+.result {
+    border: 2px solid rgb(44, 150, 44);
+    background-color: rgb(21, 116, 18);
+}
+
+.cancel {
+    border: 2px solid rgb(207, 60, 60);
+    background-color: rgb(189, 12, 12);
+}
+
 .code-result-content {
     background-color: rgb(35, 35, 35);
     border: 2px solid black;

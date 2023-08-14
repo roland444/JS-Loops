@@ -25,6 +25,10 @@ code {
     color: silver;
 }
 
+p {
+    line-height: 2em;
+}
+
 /* ================================== */
 
 /* universal-classes starts */
@@ -97,7 +101,6 @@ code {
 .underline-black:hover::after, .underline-white:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    
 }
 
 
@@ -291,6 +294,7 @@ code {
     width: 450px;
     margin: 3rem auto;
     padding: 20px;
+    margin-top: 48px;
 }
 
 .continue-text {

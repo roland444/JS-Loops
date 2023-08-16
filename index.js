@@ -5,19 +5,29 @@ const _forCancelBtn = document.getElementById("for-cancel-btn");
 
 const forResult = document.querySelector("#for-result-section");
 
+window.onload = () => {
+    forSection.init();
+}
 
 
+// for section
 
-
-
-_forResultBtn.addEventListener("click", function() {
-    for (let i = 0; i < 5; i++) {
-        setTimeout(() => {
-            forResult.innerHTML += `<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`;
-        }, 500);
+let forSection = {
+    answersShown: false,
+    init: function() {
+        _forResultBtn.addEventListener("click", this.showResults);
+        _forCancelBtn.addEventListener("click", this.cancelResults);
+        console.log(this.answersShown)
+    },
+    showResults: function() {
+        this.answersShown = true;
+        console.log(this.answersShown)
+    },
+    cancelResults: function() {
+        this.answersShown = false;
+        console.log(this.answersShown)
     }
-});
-
-_forCancelBtn.addEventListener("click", function() {
     
-})
+    
+
+}

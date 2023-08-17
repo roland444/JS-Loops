@@ -21,7 +21,16 @@ let forSection = {
         _forCancelBtn.addEventListener("click", this.cancelResults);
     },
     showResults: function() {
-        this.answersShown = true; 
+        this.answersShown = true;
+
+        for (let i = 0; i < 5; i++) { 
+            (function(i) {
+            setTimeout(function() {
+                forResult.innerHTML += `<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`;
+            }, 1000 * i);
+            })(i);
+        }
+        
         console.log(this.answersShown)
     },
     cancelResults: function() {

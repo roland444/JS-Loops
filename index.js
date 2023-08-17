@@ -5,6 +5,8 @@ const _forCancelBtn = document.getElementById("for-cancel-btn");
 
 const forResult = document.querySelector("#for-result-section");
 
+const answer = document.querySelectorAll(".result-nl");
+
 window.onload = () => {
     forSection.init();
 }
@@ -17,15 +19,18 @@ let forSection = {
     init: function() {
         _forResultBtn.addEventListener("click", this.showResults);
         _forCancelBtn.addEventListener("click", this.cancelResults);
-        console.log(this.answersShown)
     },
     showResults: function() {
-        this.answersShown = true;
+        this.answersShown = true; 
         console.log(this.answersShown)
     },
     cancelResults: function() {
-        this.answersShown = false;
-        console.log(this.answersShown)
+        if (this.answersShown) {
+            answer.remove();
+        } else {
+            answer.innerHTML = "";
+            this.answersShown = false;
+        }
     }
     
     

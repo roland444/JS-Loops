@@ -69,19 +69,25 @@ p {
 .result {
     border: 2px solid rgb(44, 150, 44);
     background-color: rgb(21, 116, 18);
+    transition: 0.3s;
 }
 
 .result:hover {
     cursor: pointer;
+    border: 2px solid rgb(33, 108, 34);
+    background-color: rgb(10, 77, 8);
 }
 
 .cancel {
     border: 2px solid rgb(207, 60, 60);
     background-color: rgb(189, 12, 12);
+    transition: 0.3s;
 }
 
 .cancel:hover {
     cursor: pointer;
+    border: 2px solid rgb(197, 21, 50);
+    background-color: rgb(148, 18, 20);
 }
 
 .code-result-content {

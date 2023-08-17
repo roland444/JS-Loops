@@ -1,43 +1,41 @@
-const _forResultBtn = document.getElementById("for-result-btn");
-const _forCancelBtn = document.getElementById("for-cancel-btn");
-
-
-
-const forResult = document.querySelector("#for-result-section");
-
-const answer = document.querySelectorAll(".result-nl");
-
 window.onload = () => {
     forSection.init();
 }
 
 
-// for section
+//for section
 
 let forSection = {
     answersShown: false,
     init: function() {
-        _forResultBtn.addEventListener("click", this.showResults);
-        _forCancelBtn.addEventListener("click", this.cancelResults);
+        const _forResultBtn = document.getElementById("for-result-btn");
+        const _forCancelBtn = document.getElementById("for-cancel-btn");
+        
+        _forResultBtn.onclick = () => this.showResults();
+
+        _forCancelBtn.onclick = () => {
+            this.cancelResults(this.answersShown);
+        }
     },
     showResults: function() {
-        this.answersShown = true;
-
-        for (let i = 0; i < 5; i++) { 
-            (function(i) {
-            setTimeout(function() {
-                forResult.innerHTML += `<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`;
-            }, 1000 * i);
-            })(i);
+        const forResult = document.querySelector("#for-result-section");
+                
+        if (!this.answersShown) {
+            for (let i = 0; i < 5; i++) { 
+                (function(i) {
+                    setTimeout(function() {
+                        forResult.insertAdjacentHTML("beforeend" ,`<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`);
+                    }, 1000 * i);
+                })(i);
+            }
         }
-        
-        console.log(this.answersShown)
+
+        this.answersShown = true;
     },
     cancelResults: function() {
         if (this.answersShown) {
-            answer.remove();
-        } else {
-            answer.innerHTML = "";
+            let answers = document.querySelectorAll("#for-result-section > .result-nl");
+            answers.forEach((el) => el.remove());
             this.answersShown = false;
         }
     }

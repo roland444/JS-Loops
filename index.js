@@ -19,20 +19,17 @@ let forSection = {
     },
     showResults: function() {
         const forResult = document.querySelector("#for-result-section");
+        
                 
         if (!this.answersShown) {
             for (let i = 0; i < 5; i++) { 
-                (function(i) {
-                    setTimeout(function() {
-                        forResult.insertAdjacentHTML("beforeend" ,`<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`);
-                    }, 1000 * i);
-                })(i);
+                forResult.insertAdjacentHTML("beforeend" ,`<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`);
             }
+            this.answersShown = true;
         }
-
-        this.answersShown = true;
     },
     cancelResults: function() {
+        console.log(this.answersShown)
         if (this.answersShown) {
             let answers = document.querySelectorAll("#for-result-section > .result-nl");
             answers.forEach((el) => el.remove());

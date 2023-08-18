@@ -1,10 +1,14 @@
 window.onload = () => {
+    // for
+    
     forSection.init();
     forOfSection.init();
+    forInSection.init();
+
+    //while
+
+    
 }
-
-
-//for section
 
 let forSection = {
     answersShown: false,
@@ -66,3 +70,36 @@ let forOfSection = {
     }
 
 }
+
+let forInSection = {
+    answersShown: false,
+    init: function() {
+        const _forInResultBtn = document.getElementById("forIn-result-btn");
+        const _forInCancelBtn = document.getElementById("forIn-cancel-btn");
+
+        _forInResultBtn.onclick = () => this.showResults();
+
+        _forInCancelBtn.onclick = () => this.cancelResults(this.answersShown);
+    },
+    showResults: function() {
+        const forInResult = document.querySelector("#for-in-result-section");
+
+        if (!this.answersShown) {
+            let object = {a: 1, b: 2, c:3};
+            
+            for (let property in object) {
+                forInResult.insertAdjacentHTML("beforeend", `<div class="result-nl">${property}: ${object[property]}</div>`);
+            }
+
+            this.answersShown = true;
+        }
+    },
+    cancelResults: function() {
+        if (this.answersShown) {
+            let answers = document.querySelectorAll("#for-in-result-section > .result-nl");
+            answers.forEach((el) => el.remove());
+            this.answersShown = false;
+        }
+    }
+}
+ 

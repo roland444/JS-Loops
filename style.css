@@ -135,7 +135,35 @@ p {
     transform-origin: bottom left;
 }
 
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218, 218, 92);
+    border: 2px solid black;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    transition: .5s;
+}
 
+.gotopbtn i {
+    color: black;
+    transition: .5s;
+}
+
+.gotopbtn:hover {
+    background-color: black;
+}
+
+.gotopbtn:hover > i {
+    color: white;
+}
 
 /* universal-classes ends */
 

@@ -7,7 +7,20 @@ window.onload = () => {
 
     //while
 
+    allWhileSection.init();
     
+    
+    //break and continue
+
+    //.init()
+
+    //forEach
+
+    //
+
+    //map
+
+    //
 }
 
 let forSection = {
@@ -88,7 +101,7 @@ let forInSection = {
             let object = {a: 1, b: 2, c:3};
             
             for (let property in object) {
-                forInResult.insertAdjacentHTML("beforeend", `<div class="result-nl">${property}: ${object[property]}</div>`);
+                forInResult.insertAdjacentHTML("beforeend", `<div class="result-nl">${property}:${object[property]}</div>`);
             }
 
             this.answersShown = true;
@@ -102,4 +115,63 @@ let forInSection = {
         }
     }
 }
- 
+
+
+let allWhileSection = {
+    whileAnswersShown: false,
+    doWhileAnswersShown: false,
+    init: function() {
+        const _whileResultBtn = document.getElementById("while-result-btn");
+        const _whileCancelBtn = document.getElementById("while-cancel-btn");
+
+        const _doWhileResultBtn = document.getElementById("do-while-result-btn");
+        const _doWhileCancelBtn = document.getElementById("do-while-cancel-btn");
+
+        _whileResultBtn.onclick = () => this.whileShowResults();
+        _whileCancelBtn.onclick = () => this.whileCancelResults(this.whileAnswersShown);
+
+        _doWhileResultBtn.onclick = () => this.doWhileShowResults();
+        _doWhileCancelBtn.onclick = () => this.doWhileCancelResults(this.doWhileAnswersShown);
+    },
+    whileShowResults: function() {
+        if (!this.whileAnswersShown) {
+            const whileResult = document.querySelector("#while-result-section");
+            let x = 0;
+
+            while (x < 5) {
+                whileResult.insertAdjacentHTML("beforeend", `<div class="result-nl" style="color: rgb(66, 182, 66);">${x}</div>`);
+                x++;
+            }
+            this.whileAnswersShown = true;
+        }
+    },
+    doWhileShowResults: function() {
+        if (!this.doWhileAnswersShown) {
+            const doWhileResult = document.querySelector("#do-while-result-section");
+            let y = 0;
+
+            do {
+                doWhileResult.insertAdjacentHTML("beforeend", `<div class="result-nl" style="color: rgb(66, 182, 66);">${y}</div>`);
+                y++;
+            }
+            while (y < 5);
+
+            this.doWhileAnswersShown = true;
+        }
+    },
+    whileCancelResults: function() {
+        if (this.whileAnswersShown) {
+            let answer = document.querySelectorAll("#while-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.whileAnswersShown = false;
+        }
+    },
+    doWhileCancelResults: function() {
+        if (this.doWhileAnswersShown) {
+            let answer = document.querySelectorAll("#do-while-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.doWhileAnswersShown = false;
+        }
+    }
+}        
+        

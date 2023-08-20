@@ -17,7 +17,7 @@ window.onload = () => {
 
     //forEach
 
-    //
+    forEachSection.init();
 
     //map
 
@@ -237,4 +237,36 @@ let continueSection = {
         }
     }
 }
+
+let forEachSection = {
+    answersShown: false,
+    init: function() {
+        const _forEachResultBtn = document.getElementById("forEach-result-btn");
+        const _forEachCancelBtn = document.getElementById("forEach-cancel-btn");
+
+        _forEachResultBtn.onclick = () => this.showResults();
+        _forEachCancelBtn.onclick = () => this.cancelResults(this.answersShown);
+    },
+    showResults: function() {
+        if (!this.answersShown) {
+            const forEachResult = document.querySelector("#forEach-result-section");
+            let array = ["a", "b", "c", "d", "e"];
+
+            array.forEach((element) => {
+                forEachResult.insertAdjacentHTML("beforeend", `<div class="result-nl">${element}</div>`);
+            })
+            this.answersShown = true;
+        }
+    },
+    cancelResults: function() {
+        if (this.answersShown) {
+            let answer = document.querySelectorAll("#forEach-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.answersShown = false;
+        }
+    }
+}
+
+                    
+                
         

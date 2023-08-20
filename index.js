@@ -12,7 +12,8 @@ window.onload = () => {
     
     //break and continue
 
-    //.init()
+    breakSection.init();
+    continueSection.init();
 
     //forEach
 
@@ -30,7 +31,6 @@ let forSection = {
         const _forCancelBtn = document.getElementById("for-cancel-btn");
         
         _forResultBtn.onclick = () => this.showResults();
-
         _forCancelBtn.onclick = () => this.cancelResults(this.answersShown);
     },
     showResults: function() {
@@ -59,7 +59,6 @@ let forOfSection = {
         const _forOfCancelBtn = document.getElementById("forOf-cancel-btn");
 
         _forOfResultBtn.onclick = () => this.showResults();
-
         _forOfCancelBtn.onclick = () => this.cancelResult(this.answersShown);
     },
     showResults: function() {
@@ -91,7 +90,6 @@ let forInSection = {
         const _forInCancelBtn = document.getElementById("forIn-cancel-btn");
 
         _forInResultBtn.onclick = () => this.showResults();
-
         _forInCancelBtn.onclick = () => this.cancelResults(this.answersShown);
     },
     showResults: function() {
@@ -173,5 +171,70 @@ let allWhileSection = {
             this.doWhileAnswersShown = false;
         }
     }
-}        
+}
+
+let breakSection = {
+    answersShown: false,
+    init: function() {
+        const _breakResultBtn = document.getElementById("break-result-btn");
+        const _breakCancelBtn = document.getElementById("break-cancel-btn");
+
+        _breakResultBtn.onclick = () => this.showResults();
+        _breakCancelBtn.onclick = () => this.cancelResults(this.answersShown);
+    },
+    showResults: function() {
+        if (!this.answersShown) {
+            const breakResult = document.querySelector("#break-result-section");
+            let x = 0;
+
+            while (x < 10) {
+                if (x === 5) {
+                    break;
+                }
+                breakResult.insertAdjacentHTML("beforeend", `<div class="result-nl" style="color: rgb(66, 182, 66);">${x}</div>`);
+                x++;
+            }
+            this.answersShown = true;
+        }
+    },
+    cancelResults: function() {
+        if (this.answersShown) {
+            let answer = document.querySelectorAll("#break-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.answersShown = false;
+        }
+    }
+    
+}
+
+let continueSection = {
+    answersShown: false,
+    init: function() {
+        const _continueResultBtn = document.getElementById("continue-result-btn");
+        const _continueCancelBtn = document.getElementById("continue-cancel-btn");
+
+        _continueResultBtn.onclick = () => this.showResults();
+        _continueCancelBtn.onclick = () => this.cancelResults(this.answersShown);
+    },
+    showResults: function() {
+        if (!this.answersShown) {
+            const continueResult = document.querySelector("#continue-result-section");
+
+            for (let i = 0; i < 5; i++) {
+                if (i === 3) {
+                    continue;
+                }
+                continueResult.insertAdjacentHTML("beforeend", `<div class="result-nl" style="color: rgb(66, 182, 66);">${i}</div>`);
+            }
+            this.answersShown = true;
+        }
+    },
+    cancelResults: function() {
+        if (this.answersShown) {
+            let answer = document.querySelectorAll("#continue-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.answersShown = false;
+        }
+    }
+}
         

@@ -1,28 +1,27 @@
 window.onload = () => {
-    // for
+    // for:
     
     forSection.init();
     forOfSection.init();
     forInSection.init();
 
-    //while
+    //while:
 
     allWhileSection.init();
     
-    
-    //break and continue
+    //break and continue:
 
     breakSection.init();
     continueSection.init();
 
-    //forEach
+    //forEach:
 
     forEachSection.init();
 
-    //map
+    //map:
 
-    //
-}
+    mapSection.init();
+};
 
 let forSection = {
     answersShown: false,
@@ -261,6 +260,35 @@ let forEachSection = {
     cancelResults: function() {
         if (this.answersShown) {
             let answer = document.querySelectorAll("#forEach-result-section > .result-nl");
+            answer.forEach((el) => el.remove());
+            this.answersShown = false;
+        }
+    }
+}
+
+let mapSection = {
+    answersShown: false,
+    init: function() {
+        const _mapResultBtn = document.getElementById("map-result-btn");
+        const _mapCancelBtn = document.getElementById("map-cancel-btn");
+
+        _mapResultBtn.onclick = () => this.showResults();
+        _mapCancelBtn.onclick = () => this.cancelResults(this.answersShown);
+    },
+    showResults: function() {
+        if (!this.answersShown) {
+            const mapResult = document.querySelector("#map-result-section");
+            let array = ["a", "b", "c", "d", "e"];
+
+            let newArray = array.map((element) => {
+                mapResult.insertAdjacentHTML("beforeend", `<div class="result-nl">${element}</div>`);
+            })
+            this.answersShown = true;
+        }
+    },
+    cancelResults: function() {
+        if (this.answersShown) {
+            let answer = document.querySelectorAll("#map-result-section > .result-nl");
             answer.forEach((el) => el.remove());
             this.answersShown = false;
         }

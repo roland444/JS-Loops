@@ -429,9 +429,22 @@ p {
 
 .footer-content {
     background-color: rgb(38, 39, 41);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     min-height: 150px;
     padding: 2rem;
     text-align: center;
+    color: white;
+}
+
+.footer-content span a {
+    color: white;
+    transition: .5s;
+}
+
+.footer-content span a:hover {
+    color: rgb(159, 159, 159);
 }
 
 /* footer sections ends */

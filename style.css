@@ -453,8 +453,96 @@ p {
 
 /* media queries frames starts */
 
-@media () {
+@media (max-width: 1025px) {
+    .introduction-content {
+        flex-direction: column-reverse;
+    }
     
+    .break {
+        width: 750px;
+    }
+
+    .continue {
+        width: 750px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .introduction {
+        padding: 5px;
+    }
+
+    .introduction-text {
+        width: 450px;
+    }
+
+    .information {
+        width: 400px;
+    }
+
+    .gotopbtn {
+        
+    }
+
+    .for-text {
+        width: 400px;
+    }
+
+    .for-of-text {
+        margin: 4rem;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .for-of-code pre {
+        width: 400px;
+        overflow-x: scroll;
+    }
+
+    .for-in-text {
+        margin: 4rem;
+        width: 400px;
+    }
+
+    .for-in-code pre {
+        width: 400px;
+        overflow-x: scroll;
+    }
+
+    .while-text {
+        width: 400px;
+    }
+
+    .do-while-text {
+        margin: 4rem;
+        width: 400px;
+    }
+
+    .continue-text {
+        width: 400px;
+    }
+
+    .forEach-text {
+        width: 400px;
+    }
+
+    .forEach-code pre {
+        width: 400px;
+        overflow-x: scroll;
+    }
+
+    .map-text {
+        width: 400px;
+    }
+
+    .map-code pre {
+        width: 400px;
+        overflow-x: scroll;
+    }
 }
 
 /* media queries ends */

@@ -480,68 +480,22 @@ p {
         width: 450px;
     }
 
-    .information {
-        width: 400px;
-    }
-
     .gotopbtn {
-        
+        display: none;
     }
 
-    .for-text {
+    .information, .for-text, .while-text, .continue-text, .forEach-text, .map-text {
         width: 400px;
     }
 
-    .for-of-text {
-        margin: 4rem;
-        padding: 10px;
-        width: 400px;
-    }
-
-    .for-of-code pre {
-        width: 400px;
+    .for-of-code pre, .for-in-code pre, .forEach-code pre, .map-code pre  {
+        width: 380px;
         overflow-x: scroll;
     }
 
-    .for-in-text {
+    .for-of-text, .for-in-text, .do-while-text {
         margin: 4rem;
         width: 400px;
-    }
-
-    .for-in-code pre {
-        width: 400px;
-        overflow-x: scroll;
-    }
-
-    .while-text {
-        width: 400px;
-    }
-
-    .do-while-text {
-        margin: 4rem;
-        width: 400px;
-    }
-
-    .continue-text {
-        width: 400px;
-    }
-
-    .forEach-text {
-        width: 400px;
-    }
-
-    .forEach-code pre {
-        width: 400px;
-        overflow-x: scroll;
-    }
-
-    .map-text {
-        width: 400px;
-    }
-
-    .map-code pre {
-        width: 400px;
-        overflow-x: scroll;
     }
 }
 

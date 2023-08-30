@@ -452,11 +452,16 @@ p {
 /* ================================== */
 
 /* media queries frames starts */
+ 
 
-@media (max-width: 1025px) {
+@media (max-width: 1262px) {
     .introduction-content {
         flex-direction: column-reverse;
     }
+}
+
+@media (max-width: 1025px) {
+    
     
     .break {
         width: 750px;
@@ -464,6 +469,12 @@ p {
 
     .continue {
         width: 750px;
+    }
+}
+
+@media (min-width: 449px) {
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -476,7 +487,12 @@ p {
         padding: 5px;
     }
 
+    .introduction-content {
+        flex-direction: column-reverse;
+    }
+
     .introduction-text {
+        flex: 0;
         width: 450px;
     }
 
